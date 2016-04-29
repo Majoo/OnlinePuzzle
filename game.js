@@ -33,7 +33,7 @@ var Cube = function (objectCount) {
 	for (i = 0; i < 6; i++) {
 		// randomly take pictures from picture array
 		pics = [];
-		for (i = 0; i < picturesPerSide; i++) {
+		for (k = 0; k < picturesPerSide; k++) {
 			var j = Math.floor((Math.random() * pictures.length);
 			pics.push(pictures.splice(j, 1));
 		}
