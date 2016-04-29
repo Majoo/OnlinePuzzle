@@ -20,7 +20,7 @@ var Cube = function (picturesPerSide) {
 	var objectCount = picturesPerSide * 3; // 6 sides divided by 2 pictures per object
 	// create pictures and couples
 	pictures = [];
-	for (i = 0; i < objectCount; i++) {
+	for (i = 1; i < objectCount + 1; i++) {
 	    var pic1 = new Picture(i + "_1.png");
 	    pictures.push(pic1);
 	    var pic2 = new Picture(i + "_2.png");
