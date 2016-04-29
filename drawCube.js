@@ -1,5 +1,5 @@
 var cubeColor = ["#326056", "#2A3D4C", "#3B3C3E", "#461420","#8B6943", "#ECCD65"];
-// parameters - different sides colors
+// parameters @front, @right, @top are numbers which cube side it is  and according to this different color will be used for drawing a cube
 function drawCube(front, right, top) {
   // get the canvas element using the DOM
   var canvas = document.getElementById('cubeCanvas');
@@ -7,9 +7,9 @@ function drawCube(front, right, top) {
   if (canvas.getContext) {
     // use getContext to use the canvas for drawing
     var ctx = canvas.getContext('2d');
-    var xBottom = 200;
-    var yBottom = 200;
-    var width = 150; //width and height are the same
+    var xBottom = 500;
+    var yBottom = 500;
+    var width = 250; //width and height are the same
 
     ctx.fillStyle = cubeColor[top];
     ctx.beginPath();
