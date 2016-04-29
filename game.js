@@ -3,7 +3,7 @@ var Picture = function (path) {
 	this.solved = false; // if it has been solved and should not be displayed anymore
 	this.partner = null;
 
-	this.addPartner = function (picture){
+	this.setPartner = function (picture){
 		this.partner = picture;
 	}
 };
@@ -22,8 +22,8 @@ var Cube = function (objectCount) {
 	    pictures.push(pic1);
 	    var pic2 = new Picture(i + "_2.png");
 	    pictures.push(pic2);
-	    pic1.addPartner(pic2);
-	    pic2.addPartner(pic1);
+	    pic1.setPartner(pic2);
+	    pic2.setPartner(pic1);
 	}
 
 	// create sides and populate them with images
