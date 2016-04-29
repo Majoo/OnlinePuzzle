@@ -34,7 +34,7 @@ var Cube = function (picturesPerSide) {
 		// randomly take pictures from picture array
 		pics = [];
 		for (k = 0; k < picturesPerSide; k++) {
-			var j = Math.floor((Math.random() * pictures.length);
+			var j = Math.floor(Math.random() * pictures.length);
 			pics.push(pictures.splice(j, 1));
 		}
 		var side = new Side(pics);
@@ -42,7 +42,7 @@ var Cube = function (picturesPerSide) {
 	}
 
 	// set a side as currently displayed side
-	this.displayedSide = sides[0];
+	this.displayedSide = this.sides[0];
 
 	// select a picture and check if they can be solved
 	this.selectPicture = function (picture){
