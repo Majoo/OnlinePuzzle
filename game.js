@@ -12,11 +12,12 @@ var Side = function (pictures) {
 	this.pictures = pictures;
 };
 
-var Cube = function (objectCount) {
+var Cube = function (picturesPerSide) {
 	this.selectedPicture = null;
 	this.sides = new Array(6);
 	this.displayedSide = null;
 	
+	var objectCount = picturesPerSide * 3; // 6 sides divided by 2 pictures per object
 	// create pictures and couples
 	pictures = [];
 	for (i = 0; i < objectCount; i++) {
@@ -29,7 +30,6 @@ var Cube = function (objectCount) {
 	}
 
 	// create sides and populate them with images
-	var picturesPerSide = objectCount / 6;
 	for (i = 0; i < 6; i++) {
 		// randomly take pictures from picture array
 		pics = [];
