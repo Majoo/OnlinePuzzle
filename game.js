@@ -7,9 +7,20 @@ var Side = function (pictures) {
 	this.pictures = pictures;
 };
 
-var Cube = function () {
+var Cube = function (objectCount) {
 	this.selectedPicture = false;
-	// load images into array
+	
+	// create pictures and couples
+	pictures = [];
+	for (i = 0; i < objectCount; i++) {
+	    var pic1 = new Picture(i + "_1.png");
+	    pictures.push(pic1);
+	    var pic2 = new Picture(i + "_2.png");
+	    pictures.push(pic2);
+	    pic1.addPartner(pic2);
+	    pic2.addPartner(pic1);
+	}
+
 	// create sides and populate them with images
 	// set a side as currently displayed side
 };
