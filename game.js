@@ -7,14 +7,20 @@ var Side = function (pictures) {
 	this.pictures = pictures;
 };
 
-var Cube = function (sides) {
-	this.sides = sides;
-	// selectedPicture
+var Cube = function () {
+	this.selectedPicture = false;
+	// load images into array
+	// create sides and populate them with images
+	// set a side as currently displayed side
 };
 
-Cube.prototype.select(picture) {
+Cube.prototype.selectPicture = function (picture) {
 	// if no picture is selected, set selected picture
 	// else check if selected and new picture are a couple
 		// if they are a couple, set them solved and hide them
 	// clear selection
+}
+
+Cube.prototype.displaySide = function (side) {
+	
 }
