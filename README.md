@@ -1,2 +1,2 @@
 # OnlinePuzzle
-Student project: an online game puzzle for Redbull
+Student project: an online puzzle game
