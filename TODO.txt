@@ -6,7 +6,7 @@
  * -if clicked switch currently displayed side of cube and display images-
 * -add event-listeners to divs, which display the images-
  * -call Cube.selectPicture (check for TODO in Cube.selectPicture)-
-* dynamically create <img>s on startup
+* -dynamically create <img>s on startup-
 
 * highscore
 * levels
