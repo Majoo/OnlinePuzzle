@@ -15,7 +15,8 @@
 
     function displayImages() {
       var pic = cube.sides[cube.frontSide - 1].pictures[0];
-      $("#img1").attr("src", "img/" + pic.path);
+      var img = $("#img0");
+      img.attr("src", "img/" + pic.path);
     }
   </script>
   <title>Online Puzzle</title>
@@ -41,7 +42,7 @@
     
   <!-- canvas for drawing different pictures on the cube-->
   <div id="myCanvas">
-    <img id="img1" src="">
+    <img id="img0" class="img" src="" alt="0">
   </div>
 
 </body>

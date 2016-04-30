@@ -1,4 +1,4 @@
-$('document').ready(function(){
+$('document').ready(function() {
 	$("#arrowUp").click(arrowUp);
 	$("#arrowDown").click(arrowDown);
 	$("#arrowLeft").click(arrowLeft);

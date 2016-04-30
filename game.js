@@ -3,10 +3,12 @@ var Picture = function (path) {
 	this.solved = false; // if it has been solved and should not be displayed anymore
 	this.partner = null;
 
-	this.setPartner = function (picture){
+	this.setPartner = function (picture) {
 		this.partner = picture;
 	}
-	this.changePictureToSolved = function(){	//user correctly selected two pictures
+
+	this.changePictureToSolved = function() {	
+		//user correctly selected two pictures
 		this.path = "solved.png";
 		this.solved = true;
 	}
@@ -47,21 +49,26 @@ var Cube = function (picturesPerSide) {
 		this.sides.push(side);
 	}
 
+	this.getFrontSide = function() {
+		return this.sides[this.frontSide - 1];
+	}
+
 	// select a picture and check if they can be solved
 	this.selectPicture = function (picture){
-		if(selectedPicture == null){	 //selecting a picture
+		if (this.selectedPicture == null){	 //selecting a picture
 			this.selectedPicture = picture;
 			console.log("user selected first card");
 		} 
 		else if (picture == this.selectedPicture){ // selecting already selected picture = deselect
-			selectedPicture = null;
+			this.selectedPicture = null;
 			console.log("deselect");
 		} 
-		else if (picture == this.selectedPicture.partner){ // correctly selected second picture  
-			//Set pair as solved and
-			//Hide pictures TODO
+		else if (picture == this.selectedPicture.partner){
+			// correctly selected second picture  
+			//Set pair as solved and Hide pictures
 			picture.changePictureToSolved();
 			this.selectedPicture.changePictureToSolved();
+			displayImages();
 			//Clear selection:
 			this.selectedPicture = null;
 			console.log("user selection correct");
@@ -75,8 +82,6 @@ var Cube = function (picturesPerSide) {
 
 
 	this.rotate = function (arrow) {
-		console.log("you clicked " + arrow);
-
 		var frontSide, topSide, rightSide;
 		switch (arrow) {
 			case ArrowEnum.UP:
