@@ -7,8 +7,9 @@
   <script src="jquery-2.2.3.min.js"></script>
   <script src="game.js"></script>
   <script type="text/javascript">
+    var picturesPerSide = 4;
+
     $('document').ready(function() {
-      var picturesPerSide = 1;
       cube = new Cube(picturesPerSide);
 
       // create <img>s in canvas div
@@ -21,9 +22,11 @@
     });
 
     function displayImages() {
-      var pic = cube.sides[cube.frontSide - 1].pictures[0];
-      var img = $("#img0");
-      img.attr("src", "img/" + pic.path);
+      for (i = 0; i < picturesPerSide; i++) {
+        var pic = cube.sides[cube.frontSide - 1].pictures[i];
+        var img = $("#img" + i);
+        img.attr("src", "img/" + pic.path);
+      }
     }
   </script>
   <title>Online Puzzle</title>
