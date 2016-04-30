@@ -4,15 +4,42 @@
 <head>
   <meta charset="utf-8">
   <link rel="stylesheet" href="style.css" >
+  <script src="jquery-2.2.3.min.js"></script>
   <script src="game.js"></script>
+  <script type="text/javascript">
+    $('document').ready(function(){
+      var cube = new Cube(1);
+      var pic = cube.sides[0].pictures[0];
+      var path = pic.path;
+      console.log(path);
+      $("#img1").attr("src", "img/" + path);
+    });
+
+  </script>
   <title>Online Puzzle</title>
 </head>
 
 <body>
 
-  <div><table>
-    
-  </table></div>
+    <!-- little cube for better imagination where are you on the cube
+      every side has it's own color
+      -->
+      <canvas id="cubeCanvas" width="300" height="300" ></canvas>
+      <script src="drawCube.js"></script>
+
+    <!-- arrows for changing pictures = orientation in cube -->
+    <img src="img/arrow/arrowUp.png" id="arrowUp" alt="arrowUp" />
+    <img src="img/arrow/arrowRight.png" id="arrowRight" alt="arrowRight" />
+    <img src="img/arrow/arrowDown.png" id="arrowDown" alt="arrowDown" />
+    <img src="img/arrow/arrowLeft.png" id="arrowLeft" alt="arrowLeft" />
+
+
+    <script src="arrowListeners.js"></script>
+
+  <!-- canvas for drawing different pictures on the cube-->
+  <div id="myCanvas">
+    <img id="img1" src="">
+  </div>
 
 </body>
 </html>
