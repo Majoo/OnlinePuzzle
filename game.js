@@ -14,12 +14,12 @@ var Side = function (pictures) {
 
 var Cube = function (picturesPerSide) {
 	this.selectedPicture = null;
-	this.sides = new Array(6);
+	this.sides = [];
 	this.displayedSide = null;
 	
 	var objectCount = picturesPerSide * 3; // 6 sides divided by 2 pictures per object
 	// create pictures and couples
-	pictures = [];
+	var pictures = [];
 	for (i = 1; i < objectCount + 1; i++) {
 	    var pic1 = new Picture(i + "_1.png");
 	    pictures.push(pic1);
@@ -32,10 +32,10 @@ var Cube = function (picturesPerSide) {
 	// create sides and populate them with images
 	for (i = 0; i < 6; i++) {
 		// randomly take pictures from picture array
-		pics = [];
+		var pics = [];
 		for (k = 0; k < picturesPerSide; k++) {
 			var j = Math.floor(Math.random() * pictures.length);
-			pics.push(pictures.splice(j, 1));
+			pics.push(pictures.splice(j, 1)[0]);
 		}
 		var side = new Side(pics);
 		this.sides.push(side);

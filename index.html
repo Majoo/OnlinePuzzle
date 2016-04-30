@@ -4,7 +4,18 @@
 <head>
   <meta charset="utf-8">
   <link rel="stylesheet" href="style.css" >
+  <script src="jquery-2.2.3.min.js"></script>
   <script src="game.js"></script>
+  <script type="text/javascript">
+    $('document').ready(function(){
+      var cube = new Cube(1);
+      var pic = cube.sides[0].pictures[0];
+      var path = pic.path;
+      console.log(path);
+      $("#img1").attr("src", "img/" + path);
+    });
+    
+  </script>
   <title>Online Puzzle</title>
 </head>
 
@@ -31,7 +42,9 @@
 
 
   <!-- canvas for drawing different pictures on the cube-->
-  <canvas id="myCanvas"></canvas>
+  <div id="myCanvas">
+    <img id="img1" src="">
+  </div>
 
 </body>
 </html>
