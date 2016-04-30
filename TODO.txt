@@ -10,4 +10,4 @@
 
 * highscore
 * levels
-* cube-animation (when switching sides)
+* -cube-animation (when switching sides)-
