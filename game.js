@@ -15,7 +15,7 @@ var Side = function (pictures) {
 var Cube = function (picturesPerSide) {
 	this.selectedPicture = null;
 	this.sides = [];
-	this.displayedSide = null;
+	this.displayedSide = 0;
 	
 	var objectCount = picturesPerSide * 3; // 6 sides divided by 2 pictures per object
 	// create pictures and couples
@@ -41,9 +41,6 @@ var Cube = function (picturesPerSide) {
 		this.sides.push(side);
 	}
 
-	// set a side as currently displayed side
-	this.displayedSide = this.sides[0];
-
 	// select a picture and check if they can be solved
 	this.selectPicture = function (picture){
 		if(selectedPicture == null){
@@ -56,11 +53,6 @@ var Cube = function (picturesPerSide) {
 			//Clear selection:
 			this.selectedPicture = null;
 		}
-	}
-
-	// display given side
-	this.displaySide = function (side) {
-		this.displayedSide = side;
 	}
 };
 

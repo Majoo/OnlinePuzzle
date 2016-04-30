@@ -8,8 +8,8 @@
   <script src="game.js"></script>
   <script type="text/javascript">
     $('document').ready(function(){
-      var cube = new Cube(1);
-      var pic = cube.sides[0].pictures[0];
+      cube = new Cube(1);
+      var pic = cube.sides[cube.displayedSide].pictures[0];
       $("#img1").attr("src", "img/" + pic.path);
     });
     

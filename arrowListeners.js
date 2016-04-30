@@ -6,28 +6,66 @@ $('document').ready(function(){
 });
 
 const ArrowEnum = {
-	UP: 1,
-	RIGHT: 2,
-	DOWN: 3,
-	LEFT: 4,
+	UP: 0,
+	RIGHT: 1,
+	DOWN: 2,
+	LEFT: 3,
 };
 
 function arrowUp () {
-    arrow(ArrowEnum.UP);
+    changeSide(ArrowEnum.UP);
 }
 
 function arrowDown () {
-    arrow(ArrowEnum.DOWN);
+    changeSide(ArrowEnum.DOWN);
 }
 
 function arrowLeft () {
-    arrow(ArrowEnum.LEFT);
+    changeSide(ArrowEnum.LEFT);
 }
 
 function arrowRight () {
-    arrow(ArrowEnum.RIGHT);
+    changeSide(ArrowEnum.RIGHT);
 }
 
-function arrow (arrowEnum){
-    console.log("you clicked " + arrowEnum);
+var rotation = 0;
+function changeSide (arrow) {
+	console.log("you clicked " + arrow);
+
+	var side = cube.displayedSide;
+	if (side == 0) {
+		var movement = (arrow + rotation) % 4;
+		switch (movement) {
+			case ArrowEnum.UP:
+				cube.displayedSide = 5;
+				break;
+			case ArrowEnum.RIGHT:
+				cube.displayedSide = 1;
+				break;
+			case ArrowEnum.DOWN:
+				cube.displayedSide = 2;
+				break;
+			case ArrowEnum.LEFT:
+				cube.displayedSide = 3;
+				break;
+		}
+
+		if (north == 5) {
+		} else if (north == 1) {
+			switch (arrow) {
+				case ArrowEnum.UP:
+					cube.displayedSide = 3;
+					break;
+				case ArrowEnum.RIGHT:
+					cube.displayedSide = 5;
+					break;
+				case ArrowEnum.DOWN:
+					cube.displayedSide = 1;
+					break;
+				case ArrowEnum.LEFT:
+					cube.displayedSide = 2;
+					break;
+			}
+		}
+	}
 }
