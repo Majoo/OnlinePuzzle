@@ -11,3 +11,7 @@
 * highscore
 * levels
 * -cube-animation (when switching sides)-
+* CSS effects:
+ * draw border on arrow on mouseOver
+ * draw border on picture on mouseOver
+ * highlight selected picture
