@@ -40,6 +40,3 @@ function drawCube(front, right, top) {
      alert('You need Safari or Firefox 1.5+ to see this demo.');
   }
 }
-
-//which side of the cube
-drawCube(0, 4, 5);

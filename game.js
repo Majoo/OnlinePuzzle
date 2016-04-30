@@ -19,10 +19,11 @@ var Side = function (pictures) {
 var Cube = function (picturesPerSide) {
 	this.selectedPicture = null;
 	this.sides = [];
-	this.displayedSide = 0;
+	this.frontSide = 1;
+	this.topSide = 3;
+	this.rightSide = 2;
 
-	var objectCount = picturesPerSide * 3; // 6 sides divided by 2 pictures
-																				// per object
+	var objectCount = picturesPerSide * 3; // 6 sides divided by 2 pictures per object
 	// create pictures and couples
 	var pictures = [];
 	for (i = 1; i < objectCount + 1; i++) {
@@ -70,5 +71,38 @@ var Cube = function (picturesPerSide) {
 			console.log("user selection incorrect");
 			this.selectedPicture = null;
 		}
+	}
+
+
+	this.rotate = function (arrow) {
+		console.log("you clicked " + arrow);
+
+		var frontSide, topSide, rightSide;
+		switch (arrow) {
+			case ArrowEnum.UP:
+				topSide = 7 - cube.frontSide;
+				frontSide = cube.topSide;
+				rightSide = cube.rightSide;
+				break;
+			case ArrowEnum.DOWN:
+				topSide = cube.frontSide;
+				frontSide = 7 - cube.topSide;
+				rightSide = cube.rightSide;
+				break;
+			case ArrowEnum.RIGHT:
+				topSide = cube.topSide;
+				frontSide = cube.rightSide;
+				rightSide = 7 - cube.frontSide;
+				break;
+			case ArrowEnum.LEFT:
+				topSide = cube.topSide;
+				frontSide = 7 - cube.rightSide;
+				rightSide = cube.frontSide;
+				break;
+		}
+		
+		cube.topSide = topSide;
+		cube.frontSide = frontSide;
+		cube.rightSide = rightSide;
 	}
 };

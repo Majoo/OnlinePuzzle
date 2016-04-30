@@ -9,10 +9,14 @@
   <script type="text/javascript">
     $('document').ready(function(){
       cube = new Cube(1);
-      var pic = cube.sides[cube.displayedSide].pictures[0];
-      $("#img1").attr("src", "img/" + pic.path);
+      displayImages();
+      drawCube(cube.frontSide - 1, cube.rightSide - 1, cube.topSide - 1);
     });
 
+    function displayImages() {
+      var pic = cube.sides[cube.frontSide - 1].pictures[0];
+      $("#img1").attr("src", "img/" + pic.path);
+    }
   </script>
   <title>Online Puzzle</title>
 </head>
