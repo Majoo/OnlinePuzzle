@@ -1,12 +1,12 @@
 * define structure of UI with HTML/CSS
 * create a cube instance on startup
-* display images in divs
-* find images 1 to 6
-* add event-listeners to buttons
- * if clicked switch currently displayed side of cube and display images
-* add event-listeners to divs, which display the images
- * call Cube.selectPicture (check for TODO in Cube.selectPicture)
-* dynamically create divs on startup
+* -display images in divs-
+* -find images 1 to 6-
+* -add event-listeners to buttons-
+ * -if clicked switch currently displayed side of cube and display images-
+* -add event-listeners to divs, which display the images-
+ * -call Cube.selectPicture (check for TODO in Cube.selectPicture)-
+* dynamically create <img>s on startup
 
 * highscore
 * levels
