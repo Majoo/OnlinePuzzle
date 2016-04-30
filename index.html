@@ -11,16 +11,9 @@
 <body>
 
     <!-- little cube for better imagination where are you on the cube
-          6 colours:
-            front: #326056
-            back: #2A3D4C
-            left: #3B3C3E
-            right: #461420
-            up: #8B6943
-            down: #ECCD65
       every side has it's own color
       -->
-      <canvas id="cubeCanvas"></canvas>
+      <canvas id="cubeCanvas" width="300" height="300" ></canvas>
       <script src="drawCube.js"></script>
 
     <!-- arrows for changing pictures = orientation in cube -->
@@ -30,8 +23,10 @@
     <img src="img/arrow/arrowLeft.png" id="arrowLeft" alt="arrowLeft" />
 
 
-  <!-- canvas for drawing different pictures on the cube-->
-  <canvas id="myCanvas"></canvas>
+    <!-- canvas for drawing different pictures on the cube-->
+    <canvas id="myCanvas" width="490" height="490"></canvas>
 
+    <script src="arrowListeners.js"></script>
+    
 </body>
 </html>
