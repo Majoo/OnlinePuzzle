@@ -3,7 +3,6 @@ document.getElementById("arrowDown").addEventListener("click", arrowDown);
 document.getElementById("arrowLeft").addEventListener("click", arrowLeft);
 document.getElementById("arrowRight").addEventListener("click", arrowRight);
 
-
 function arrowUp (){
     console.log("you clicked arrow up");
 }

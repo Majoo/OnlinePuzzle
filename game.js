@@ -6,6 +6,10 @@ var Picture = function (path) {
 	this.setPartner = function (picture){
 		this.partner = picture;
 	}
+	this.changePictureToSolved = function(){	//user correctly selected two pictures
+		this.path = "solved.png";
+		this.solved = true;
+	}
 };
 
 var Side = function (pictures) {
@@ -47,14 +51,26 @@ var Cube = function (picturesPerSide) {
 
 	// select a picture and check if they can be solved
 	this.selectPicture = function (picture){
-		if(selectedPicture == null){
+		if(selectedPicture == null){	 //selecting a picture
 			this.selectedPicture = picture;
-		}else if (picture == this.selectedPicture ){
-			//Set pair as solved:
-			picture.solved = true;
-			this.selectedPicture.solved = true;
+			console.log("user selected first card");
+		} 
+		else if (picture == this.selectedPicture){ // selecting already selected picture = deselect
+			selectedPicture = null;
+			console.log("deselect");
+		} 
+		else if (picture == this.selectedPicture.partner){ // correctly selected second picture  
+			//Set pair as solved and
 			//Hide pictures TODO
+			picture.changePictureToSolved();
+			this.selectedPicture.changePictureToSolved();
 			//Clear selection:
+			this.selectedPicture = null;
+			console.log("user selection correct");
+		} else	// incorrectly selected second picture  
+		{
+			//should we say something?
+			console.log("user selection incorrect");
 			this.selectedPicture = null;
 		}
 	}
