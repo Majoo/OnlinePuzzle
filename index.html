@@ -7,8 +7,15 @@
   <script src="jquery-2.2.3.min.js"></script>
   <script src="game.js"></script>
   <script type="text/javascript">
-    $('document').ready(function(){
-      cube = new Cube(1);
+    $('document').ready(function() {
+      var picturesPerSide = 1;
+      cube = new Cube(picturesPerSide);
+
+      // create <img>s in canvas div
+      var div = $("#myCanvas");
+      for (i = 0; i < picturesPerSide; i++) {
+        div.append("<img id='img" + i + "' class='img' src='' alt='" + i +"'>");
+      }
       displayImages();
       drawCube(cube.frontSide - 1, cube.rightSide - 1, cube.topSide - 1);
     });
@@ -42,7 +49,6 @@
     
   <!-- canvas for drawing different pictures on the cube-->
   <div id="myCanvas">
-    <img id="img0" class="img" src="" alt="0">
   </div>
 
 </body>
