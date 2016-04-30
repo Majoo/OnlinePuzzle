@@ -11,7 +11,6 @@ const ArrowEnum = {
 	DOWN: 2,
 	LEFT: 3,
 };
-
 function arrowUp () {
     changeSide(ArrowEnum.UP);
 }
