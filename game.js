@@ -16,8 +16,9 @@ var Cube = function (picturesPerSide) {
 	this.selectedPicture = null;
 	this.sides = new Array(6);
 	this.displayedSide = null;
-	
-	var objectCount = picturesPerSide * 3; // 6 sides divided by 2 pictures per object
+
+	var objectCount = picturesPerSide * 3; // 6 sides divided by 2 pictures
+																				// per object
 	// create pictures and couples
 	pictures = [];
 	for (i = 1; i < objectCount + 1; i++) {
@@ -63,5 +64,3 @@ var Cube = function (picturesPerSide) {
 		this.displayedSide = side;
 	}
 };
-
-
