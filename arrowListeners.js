@@ -1,21 +1,33 @@
-document.getElementById("arrowUp").addEventListener("click", arrowUp);
-document.getElementById("arrowDown").addEventListener("click", arrowDown);
-document.getElementById("arrowLeft").addEventListener("click", arrowLeft);
-document.getElementById("arrowRight").addEventListener("click", arrowRight);
+$('document').ready(function(){
+	$("#arrowUp").click(arrowUp);
+	$("#arrowDown").click(arrowDown);
+	$("#arrowLeft").click(arrowLeft);
+	$("#arrowRight").click(arrowRight);
+});
 
+const ArrowEnum = {
+	UP: 1,
+	RIGHT: 2,
+	DOWN: 3,
+	LEFT: 4,
+};
 
-function arrowUp (){
-    console.log("you clicked arrow up");
+function arrowUp () {
+    arrow(ArrowEnum.UP);
 }
 
-function arrowDown (){
-    console.log("you clicked arrow down");
+function arrowDown () {
+    arrow(ArrowEnum.DOWN);
 }
 
-function arrowLeft (){
-    console.log("you clicked arrow left");
+function arrowLeft () {
+    arrow(ArrowEnum.LEFT);
 }
 
-function arrowRight (){
-    console.log("you clicked arrow right");
+function arrowRight () {
+    arrow(ArrowEnum.RIGHT);
+}
+
+function arrow (arrowEnum){
+    console.log("you clicked " + arrowEnum);
 }

@@ -10,9 +10,7 @@
     $('document').ready(function(){
       var cube = new Cube(1);
       var pic = cube.sides[0].pictures[0];
-      var path = pic.path;
-      console.log(path);
-      $("#img1").attr("src", "img/" + path);
+      $("#img1").attr("src", "img/" + pic.path);
     });
     
   </script>
