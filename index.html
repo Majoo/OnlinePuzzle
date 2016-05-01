@@ -42,8 +42,13 @@
         var pic = cube.sides[cube.frontSide - 1].pictures[i];
         var img = $("#img" + i);
         img.attr("src", "img/" + pic.path);
+        if ((cube.selectedPicture != null) && (cube.selectedPicture.path == pic.path)){
+          $("#img"+i).addClass('selected');
+          console.log("selected picture remembered");
+        } else {
+          $("#img"+i).removeClass('selected');
+        }
       }
-    }
   </script>
   <title>Online Puzzle</title>
 </head>

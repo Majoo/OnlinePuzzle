@@ -61,10 +61,12 @@ var Cube = function (picturesPerSide) {
 		if (this.selectedPicture == null){	 //selecting a picture
 			this.selectedPicture = picture;
 			console.log("user selected first card");
+			displayImages();
 		}
 		else if (picture == this.selectedPicture){ // selecting already selected picture = deselect
 			this.selectedPicture = null;
 			console.log("deselect");
+			displayImages();
 		}
 		else if (picture == this.selectedPicture.partner){
 			// correctly selected second picture
@@ -79,6 +81,7 @@ var Cube = function (picturesPerSide) {
 			this.selectedPicture = null;
 			console.log("user selection correct");
 
+			displayImages();
 			// check if all pics have been solved
 			this.objectsToSolve--;
 			if (this.objectsToSolve == 0) {
@@ -92,6 +95,7 @@ var Cube = function (picturesPerSide) {
 			//should we say something?
 			console.log("user selection incorrect");
 			this.selectedPicture = null;
+			displayImages();
 		}
 	}
 
