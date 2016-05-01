@@ -79,6 +79,8 @@ var Cube = function (picturesPerSide) {
 			this.objectsToSolve--;
 			if (this.objectsToSolve == 0) {
 				window.alert("You solved the cube! Are you ready for the next level?");
+				level++;
+				$("#levelLbl").text(level);
 				init(4);
 			};
 		} else	// incorrectly selected second picture  

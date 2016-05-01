@@ -9,6 +9,7 @@
   <script src="game.js"></script>
   <script type="text/javascript">
     var cube;
+    var level = 1;
     $('document').ready(function() {
       init(1);
     });
@@ -49,25 +50,23 @@
 
 <body>
 
-    <!-- little cube for better imagination where are you on the cube
-      every side has it's own color
-      -->
-      <canvas id="cubeCanvas" width="300" height="300" ></canvas>
-      <script src="drawCube.js"></script>
+  <!-- little cube for better imagination where are you on the cube
+    every side has it's own color
+    -->
+  <canvas id="cubeCanvas" width="300" height="300" ></canvas>
+  <script src="drawCube.js"></script>
 
-    <!-- arrows for changing pictures = orientation in cube -->
-    <img src="img/arrow/arrowUp.png" id="arrowUp" alt="arrowUp" />
-    <img src="img/arrow/arrowRight.png" id="arrowRight" alt="arrowRight" />
-    <img src="img/arrow/arrowDown.png" id="arrowDown" alt="arrowDown" />
-    <img src="img/arrow/arrowLeft.png" id="arrowLeft" alt="arrowLeft" />
-
-
-    <script src="arrowListeners.js"></script>
-    <script src="selectListener.js"></script>
+  <!-- arrows for changing pictures = orientation in cube -->
+  <img src="img/arrow/arrowUp.png" id="arrowUp" alt="arrowUp" />
+  <img src="img/arrow/arrowRight.png" id="arrowRight" alt="arrowRight" />
+  <img src="img/arrow/arrowDown.png" id="arrowDown" alt="arrowDown" />
+  <img src="img/arrow/arrowLeft.png" id="arrowLeft" alt="arrowLeft" />
+  <script src="arrowListeners.js"></script>
     
   <!-- canvas for drawing different pictures on the cube-->
-  <div id="myCanvas">
-  </div>
+  <div id="myCanvas"></div>
+
+  <p class="text">Level: <span id="levelLbl" >1</span></p>
 
 </body>
 </html>
