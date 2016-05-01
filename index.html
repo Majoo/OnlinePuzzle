@@ -42,8 +42,13 @@
         var pic = cube.sides[cube.frontSide - 1].pictures[i];
         var img = $("#img" + i);
         img.attr("src", "img/" + pic.path);
+        if ((cube.selectedPicture != null) && (cube.selectedPicture.path == pic.path)){
+          $("#img"+i).addClass('selected');
+          console.log("selected picture remembered");
+        } else {
+          $("#img"+i).removeClass('selected');
+        }
       }
-    }
   </script>
   <title>Online Puzzle</title>
 </head>
@@ -62,7 +67,7 @@
   <img src="img/arrow/arrowDown.png" id="arrowDown" alt="arrowDown" />
   <img src="img/arrow/arrowLeft.png" id="arrowLeft" alt="arrowLeft" />
   <script src="arrowListeners.js"></script>
-    
+
   <!-- canvas for drawing different pictures on the cube-->
   <div id="myCanvas"></div>
 
