@@ -57,3 +57,6 @@ body {
   border-radius: 15px;
   margin: 5px;
 }
+#arrowUp:hover, #arrowDown:hover, #arrowLeft:hover, #arrowRight:hover, .img:hover {
+  border: 3px solid #FF8366;
+}
