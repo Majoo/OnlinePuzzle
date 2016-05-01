@@ -60,3 +60,6 @@ body {
 #arrowUp:hover, #arrowDown:hover, #arrowLeft:hover, #arrowRight:hover, .img:hover {
   border: 3px solid #FF8366;
 }
+.selected {
+  border: 2px solid #FF8366;
+}
