@@ -10,16 +10,31 @@
   <script type="text/javascript">
     var cube;
     $('document').ready(function() {
-      cube = new Cube(4);
+      init(1);
+    });
+
+    function init(picturesPerSide) {
+      cube = new Cube(picturesPerSide);
 
       // create <img>s in canvas div
       var div = $("#myCanvas");
+      div.empty();
       for (i = 0; i < cube.picturesPerSide; i++) {
         div.append("<img id='img" + i + "' class='img' src='' alt='" + i +"'>");
       }
       displayImages();
       drawCube(cube.frontSide - 1, cube.rightSide - 1, cube.topSide - 1);
-    });
+
+      // init listeners
+      for (i = 0; i < cube.picturesPerSide; i++) {
+      $("#img" + i).click(function(eventObject) {
+      var element = $( this );
+        var picIndex = element.attr("alt");
+        console.log("user selected " + picIndex);
+        cube.selectPicture(cube.getFrontSide().pictures[picIndex]);
+      });
+      }
+    }
 
     function displayImages() {
       for (i = 0; i < cube.picturesPerSide; i++) {

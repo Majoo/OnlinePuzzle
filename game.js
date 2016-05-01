@@ -74,6 +74,13 @@ var Cube = function (picturesPerSide) {
 			//Clear selection:
 			this.selectedPicture = null;
 			console.log("user selection correct");
+
+			// check if all pics have been solved
+			this.objectsToSolve--;
+			if (this.objectsToSolve == 0) {
+				window.alert("You solved the cube! Are you ready for the next level?");
+				init(4);
+			};
 		} else	// incorrectly selected second picture  
 		{
 			//should we say something?
