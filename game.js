@@ -7,7 +7,7 @@ var Picture = function (path) {
 		this.partner = picture;
 	}
 
-	this.changePictureToSolved = function() {	
+	this.changePictureToSolved = function() {
 		//user correctly selected two pictures
 		this.path = "solved.png";
 		this.solved = true;
@@ -27,6 +27,7 @@ var Cube = function (picturesPerSide) {
 	this.rightSide = 2;
 	this.objectCount = this.picturesPerSide * 3; // 6 sides divided by 2 pictures per object
 	this.objectsToSolve = this.objectCount;
+	this.highscore = 0;
 
 	// create pictures and couples
 	var pictures = [];
@@ -60,16 +61,19 @@ var Cube = function (picturesPerSide) {
 		if (this.selectedPicture == null){	 //selecting a picture
 			this.selectedPicture = picture;
 			console.log("user selected first card");
-		} 
+		}
 		else if (picture == this.selectedPicture){ // selecting already selected picture = deselect
 			this.selectedPicture = null;
 			console.log("deselect");
-		} 
+		}
 		else if (picture == this.selectedPicture.partner){
-			// correctly selected second picture  
+			// correctly selected second picture
 			//Set pair as solved and Hide pictures
 			picture.changePictureToSolved();
 			this.selectedPicture.changePictureToSolved();
+			this.highscore = this.highscore + 2;
+			$("#highscoreLbl").text(this.highscore);
+			console.log("highscore: "+this.highscore);
 			displayImages();
 			//Clear selection:
 			this.selectedPicture = null;
@@ -83,7 +87,7 @@ var Cube = function (picturesPerSide) {
 				$("#levelLbl").text(level);
 				init(4);
 			};
-		} else	// incorrectly selected second picture  
+		} else	// incorrectly selected second picture
 		{
 			//should we say something?
 			console.log("user selection incorrect");
@@ -116,7 +120,7 @@ var Cube = function (picturesPerSide) {
 				rightSide = cube.frontSide;
 				break;
 		}
-		
+
 		cube.topSide = topSide;
 		cube.frontSide = frontSide;
 		cube.rightSide = rightSide;
