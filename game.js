@@ -19,16 +19,18 @@ var Side = function (pictures) {
 };
 
 var Cube = function (picturesPerSide) {
+	this.picturesPerSide = picturesPerSide;
 	this.selectedPicture = null;
 	this.sides = [];
 	this.frontSide = 1;
 	this.topSide = 3;
 	this.rightSide = 2;
+	this.objectCount = this.picturesPerSide * 3; // 6 sides divided by 2 pictures per object
+	this.objectsToSolve = this.objectCount;
 
-	var objectCount = picturesPerSide * 3; // 6 sides divided by 2 pictures per object
 	// create pictures and couples
 	var pictures = [];
-	for (i = 1; i < objectCount + 1; i++) {
+	for (i = 1; i < this.objectCount + 1; i++) {
 	    var pic1 = new Picture(i + "_1.png");
 	    pictures.push(pic1);
 	    var pic2 = new Picture(i + "_2.png");

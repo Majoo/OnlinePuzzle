@@ -8,14 +8,13 @@
 
   <script src="game.js"></script>
   <script type="text/javascript">
-    var picturesPerSide = 4;
-
+    var cube;
     $('document').ready(function() {
-      cube = new Cube(picturesPerSide);
+      cube = new Cube(4);
 
       // create <img>s in canvas div
       var div = $("#myCanvas");
-      for (i = 0; i < picturesPerSide; i++) {
+      for (i = 0; i < cube.picturesPerSide; i++) {
         div.append("<img id='img" + i + "' class='img' src='' alt='" + i +"'>");
       }
       displayImages();
@@ -23,7 +22,7 @@
     });
 
     function displayImages() {
-      for (i = 0; i < picturesPerSide; i++) {
+      for (i = 0; i < cube.picturesPerSide; i++) {
         var pic = cube.sides[cube.frontSide - 1].pictures[i];
         var img = $("#img" + i);
         img.attr("src", "img/" + pic.path);
