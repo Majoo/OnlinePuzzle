@@ -10,6 +10,8 @@
 
 * highscore
 * levels
+ * switch level
+ * display current level
 * -cube-animation (when switching sides)-
 * CSS effects:
  * draw border on arrow on mouseOver
