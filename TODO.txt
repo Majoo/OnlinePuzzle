@@ -9,11 +9,15 @@
 * -dynamically create <img>s on startup-
 
 * highscore
-* levels
- * switch level
- * display current level
+ * calculate highscore (basic: 1 point per solved picture; advanced: measure time needed, the faster the more points)
+ * display highscore
+* -levels-
+ * -switch level-
+ * -display current level-
 * -cube-animation (when switching sides)-
 * CSS effects:
  * draw border on arrow on mouseOver
  * draw border on picture on mouseOver
  * highlight selected picture
+
+* Das Spiel soll von den Designer gerankt werden (6 Mind Skills: 0-10 Punkte pro Kategorie):
