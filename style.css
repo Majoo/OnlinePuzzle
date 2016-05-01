@@ -54,6 +54,6 @@ body {
 .img {
   flex: 1;
   flex-basis: 230px;
-  width: 230px;
+  border-radius: 15px;
   margin: 5px;
 }
