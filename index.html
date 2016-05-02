@@ -1,68 +1,19 @@
-
 <!doctype html>
 <html>
 <head>
   <meta charset="utf-8">
-  <link rel="stylesheet" href="style.css" >
-  <script src="jquery-2.2.3.min.js"></script>
+  <link rel="stylesheet" href="css/style.css" >
+  <link rel="icon" type="image/png" href="img/favicon/square.png" />
 
-  <script src="game.js"></script>
-  <script src="timer.js"></script>
-  <script type="text/javascript">
-    var cube;
-    var level = 1;
-    $('document').ready(function() {
-      init(4);
-    });
+  <script src="lib/jquery-2.2.3.min.js"></script>
 
-    function init(picturesPerSide) {
-      cube = new Cube(picturesPerSide);
+  <script src="game/game.js"></script>
+  <script src="game/timer.js"></script>
+  <script src="game/initGame.js"></script>
+  <script src="game/drawCube.js"></script>
+  <script src="game/arrowListeners.js"></script>
 
-      // create <img>s in canvas div
-      var div = $("#myCanvas");
-      div.empty();
-
-      if(picturesPerSide == 1){
-        for (i = 0; i < cube.picturesPerSide; i++) {
-          div.append("<img style='width:450px;height:450px;' id='img" + i + "' class='img' src='' alt='" + i +"'>");
-        }
-      }
-      else if(picturesPerSide == 4){
-        for (i = 0; i < cube.picturesPerSide; i++) {
-          div.append("<img id='img" + i + "' class='img' src='' alt='" + i +"'>");
-        }
-      }
-
-      div.append("</table>");
-      displayImages();
-      drawCube(cube.frontSide - 1, cube.rightSide - 1, cube.topSide - 1);
-
-      // init listeners
-      for (i = 0; i < cube.picturesPerSide; i++) {
-      $("#img" + i).click(function(eventObject) {
-      var element = $( this );
-        var picIndex = element.attr("alt");
-        console.log("user selected " + picIndex);
-        cube.selectPicture(cube.getFrontSide().pictures[picIndex]);
-      });
-      }
-    }
-
-    function displayImages() {
-      for (i = 0; i < cube.picturesPerSide; i++) {
-        var pic = cube.sides[cube.frontSide - 1].pictures[i];
-        var img = $("#img" + i);
-        img.attr("src", "img/" + pic.path);
-        if ((cube.selectedPicture != null) && (cube.selectedPicture.path == pic.path)){
-          $("#img"+i).addClass('selected');
-          console.log("selected picture remembered");
-        } else {
-          $("#img"+i).removeClass('selected');
-        }
-      }
-    }
-  </script>
-  <title>Online Puzzle</title>
+  <title>Cube Memory</title>
 </head>
 
 <body>
@@ -71,21 +22,25 @@
     every side has it's own color
     -->
   <canvas id="cubeCanvas" width="300" height="300" ></canvas>
-  <script src="drawCube.js"></script>
 
   <!-- arrows for changing pictures = orientation in cube -->
   <img src="img/arrow/arrowUp.png" id="arrowUp" alt="arrowUp" />
   <img src="img/arrow/arrowRight.png" id="arrowRight" alt="arrowRight" />
   <img src="img/arrow/arrowDown.png" id="arrowDown" alt="arrowDown" />
   <img src="img/arrow/arrowLeft.png" id="arrowLeft" alt="arrowLeft" />
-  <script src="arrowListeners.js"></script>
 
   <!-- canvas for drawing different pictures on the cube-->
   <div id="myCanvas"></div>
 
-  <p class="text">Level: <span id="levelLbl" >1</span></p>
-  <p class="text">Score: <span id="highscoreLbl" >0</span></p>
-  <p class="text">Time: <span id="timeLbl" ></span></p>
+  <p class="gameText">Level: <span id="levelLbl" >1</span></p>
+  <p class="gameText">Time: <span id="timeLbl" ></span></p>
+  <br>
+  <p class="scoreText">Score: <span id="scoreLbl" >0</span></p>
+  <p class="scoreText">Highscore: <span id="highscoreLbl" ></span></p>
+
+
+</body>
+</html>
 
 </body>
 </html>
