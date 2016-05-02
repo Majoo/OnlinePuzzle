@@ -64,6 +64,10 @@ var Cube = function (picturesPerSide) {
 
 	// select a picture and check if they can be solved
 	this.selectPicture = function (picture){
+
+		localStorage.setItem("highscore",this.score);
+		console.log(localStorage.getItem("highscore"));
+
 		if (this.selectedPicture == null){	 //selecting a picture
 			this.selectedPicture = picture;
 			console.log("user selected first card");
@@ -81,6 +85,7 @@ var Cube = function (picturesPerSide) {
 			this.selectedPicture.changePictureToSolved();
 			this.score = this.score + 2;
 			$("#scoreLbl").text(this.score);
+
 			displayImages();
 			//Clear selection:
 			this.selectedPicture = null;
@@ -96,8 +101,8 @@ var Cube = function (picturesPerSide) {
 				level++;
 				$("#levelLbl").text(level);
 				//Save score
-				if (score > parseInt(localStorage.getItem("highscore"))) {
-  				localStorage.setItem("highscore", score);
+				if (this.score > parseInt(localStorage.getItem("highscore"))) {
+  				localStorage.setItem("highscore", this.score);
 				}
 				$("#highscoreLbl").text(localStorage.getItem("highscore"));
 				this.score = 0;
