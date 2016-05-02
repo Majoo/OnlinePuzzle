@@ -88,6 +88,8 @@ var Cube = function (picturesPerSide) {
 				window.alert("You solved the cube! Are you ready for the next level?");
 				level++;
 				$("#levelLbl").text(level);
+				this.highscore = 0;
+				$("#highscoreLbl").text(this.highscore);
 				init(4);
 			};
 		} else	// incorrectly selected second picture

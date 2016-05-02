@@ -9,8 +9,9 @@
 * -dynamically create <img>s on startup-
 
 * highscore
- * calculate highscore (basic: 1 point per solved picture; advanced: measure time needed, the faster the more points)
- * display highscore
+ * -calculate highscore (basic: 1 point per solved picture;- 
+                advanced: measure time needed, the faster the more points)
+ * -display highscore-
 * -levels-
  * -switch level-
  * -display current level-
@@ -19,5 +20,6 @@
  * draw border on arrow on mouseOver
  * draw border on picture on mouseOver
  * highlight selected picture
+ * in level 2 scale/crop images so they fit in the cube
 
 * Das Spiel soll von den Designer gerankt werden (6 Mind Skills: 0-10 Punkte pro Kategorie):

@@ -43,7 +43,7 @@ body {
   position: absolute;
   left: 20em;
   top: 5em;
-  border:5px solid #326056;
+  border:5px solid #FFD600;
   border-radius: 25px;
   width: 490px;
   height: 490px;
@@ -56,10 +56,14 @@ body {
   flex-basis: 230px;
   border-radius: 15px;
   margin: 5px;
+
+  width: 210px;
+  height: 210px;
+
 }
 #arrowUp:hover, #arrowDown:hover, #arrowLeft:hover, #arrowRight:hover, .img:hover {
-  border: 3px solid #FF8366;
+  border: 3px solid #FFD600;
 }
 .selected {
-  border: 2px solid #FF8366;
+  border: 2px solid #267FFF;
 }

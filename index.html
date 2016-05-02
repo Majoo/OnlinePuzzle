@@ -11,7 +11,7 @@
     var cube;
     var level = 1;
     $('document').ready(function() {
-      init(1);
+      init(4);
     });
 
     function init(picturesPerSide) {
@@ -20,9 +20,23 @@
       // create <img>s in canvas div
       var div = $("#myCanvas");
       div.empty();
+      div.append("<table>");
       for (i = 0; i < cube.picturesPerSide; i++) {
+
+        if(cube.picturesPerSide != 0 && i != 1
+            && cube.picturesPerSide % i){
+              div.append("<tr>");
+        }
+
         div.append("<img id='img" + i + "' class='img' src='' alt='" + i +"'>");
+
+        if(cube.picturesPerSide != 0 && i != 1
+            && cube.picturesPerSide % i){
+              div.append("</tr>");
+        }
+
       }
+      div.append("</table>");
       displayImages();
       drawCube(cube.frontSide - 1, cube.rightSide - 1, cube.topSide - 1);
 
@@ -49,6 +63,7 @@
           $("#img"+i).removeClass('selected');
         }
       }
+    }
   </script>
   <title>Online Puzzle</title>
 </head>
