@@ -18,7 +18,7 @@ function startTimer(duration, display) {
 }
 
 jQuery(function ($) {
-    var fourMinutes = 60 * 4,
+    var threeMinutes = 60 * 3,
         display = $('#timeLbl');
-    startTimer(fourMinutes, display);
+    startTimer(threeMinutes, display);
 });

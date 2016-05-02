@@ -21,9 +21,18 @@
       // create <img>s in canvas div
       var div = $("#myCanvas");
       div.empty();
-      for (i = 0; i < cube.picturesPerSide; i++) {
-        div.append("<img id='img" + i + "' class='img' src='' alt='" + i +"'>");
+
+      if(picturesPerSide == 1){
+        for (i = 0; i < cube.picturesPerSide; i++) {
+          div.append("<img style='width:450px;height:450px;' id='img" + i + "' class='img' src='' alt='" + i +"'>");
+        }
       }
+      else if(picturesPerSide == 4){
+        for (i = 0; i < cube.picturesPerSide; i++) {
+          div.append("<img id='img" + i + "' class='img' src='' alt='" + i +"'>");
+        }
+      }
+
       div.append("</table>");
       displayImages();
       drawCube(cube.frontSide - 1, cube.rightSide - 1, cube.topSide - 1);
