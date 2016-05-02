@@ -1,0 +1,960 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"obje",
+				"objectsToSolve"
+			],
+			[
+				"objec",
+				"objectCount"
+			],
+			[
+				"picture",
+				"picturesPerSide"
+			],
+			[
+				"dra",
+				"drawCube"
+			],
+			[
+				"arr",
+				"ArrowEnum"
+			],
+			[
+				"Arro",
+				"ArrowEnum"
+			],
+			[
+				"arrow",
+				"arrowEnum"
+			],
+			[
+				"pictures",
+				"picturesPerSide"
+			],
+			[
+				"side",
+				"sides"
+			],
+			[
+				"displa",
+				"displayedSide"
+			],
+			[
+				"pi",
+				"pictures"
+			],
+			[
+				"selecte",
+				"selectedPicture"
+			],
+			[
+				"sys_",
+				"sys_opt_wert"
+			],
+			[
+				"sys",
+				"sys_opt_name"
+			],
+			[
+				"lager",
+				"lagerstandprodukte"
+			],
+			[
+				"gs_p",
+				"gss_pflanzjahr"
+			],
+			[
+				"true",
+				"true"
+			],
+			[
+				"lie",
+				"lieferantmerkmal"
+			],
+			[
+				"liefer",
+				"lieferant"
+			],
+			[
+				"geo",
+				"geo_k_nr"
+			],
+			[
+				"mess",
+				"wgm_messtyp"
+			],
+			[
+				"wgm_a",
+				"wgm_arbeitsschritt"
+			],
+			[
+				"appen",
+				"appendBadge"
+			],
+			[
+				"new",
+				"newSignifier"
+			],
+			[
+				"bag",
+				"badges"
+			],
+			[
+				"id",
+				"id"
+			],
+			[
+				"fun",
+				"function"
+			],
+			[
+				"badge",
+				"badgeBorder"
+			],
+			[
+				"pop",
+				"popUp"
+			],
+			[
+				"popup",
+				"popUpButton"
+			],
+			[
+				"padding",
+				"padding-bottom"
+			],
+			[
+				"slide",
+				"slideInButton"
+			],
+			[
+				"bad",
+				"badge"
+			],
+			[
+				"di",
+				"display"
+			],
+			[
+				"padd",
+				"padding"
+			],
+			[
+				"al",
+				"vertical-align"
+			],
+			[
+				"inlin",
+				"inline-block"
+			],
+			[
+				"top",
+				"text-top"
+			],
+			[
+				"v",
+				"vertical-align"
+			],
+			[
+				"a",
+				"vertical-align"
+			],
+			[
+				"blo",
+				"inline-block"
+			],
+			[
+				"bac",
+				"background-color"
+			],
+			[
+				"b",
+				"badgeDescription"
+			],
+			[
+				"mi",
+				"minUmsatzDatum"
+			],
+			[
+				"linie",
+				"linieHaltestellen"
+			],
+			[
+				"k",
+				"kürzel"
+			],
+			[
+				"l",
+				"localName"
+			],
+			[
+				"Strin",
+				"StringBuilder"
+			],
+			[
+				"sub",
+				"subpageLevel"
+			],
+			[
+				"String",
+				"StringBuffer"
+			],
+			[
+				"call",
+				"callValidation"
+			],
+			[
+				"enab",
+				"enableRegisterButton"
+			],
+			[
+				"if",
+				"if	if"
+			],
+			[
+				"disa",
+				"disableRegisterButton"
+			],
+			[
+				"disable",
+				"disabled"
+			],
+			[
+				"progr",
+				"progressBar"
+			],
+			[
+				"el",
+				"element"
+			],
+			[
+				"coun",
+				"countdown"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "TODO.txt",
+			"settings":
+			{
+				"buffer_size": 870,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "index.html",
+			"settings":
+			{
+				"buffer_size": 2119,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "game.js",
+			"settings":
+			{
+				"buffer_size": 3349,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "arrowListeners.js",
+			"settings":
+			{
+				"buffer_size": 622,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "drawCube.js",
+			"settings":
+			{
+				"buffer_size": 1520,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "style.css",
+			"settings":
+			{
+				"buffer_size": 722,
+				"line_ending": "Windows"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 0.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/C/development/web/OnlinePuzzle/selectListener.js",
+		"/C/Users/Dominik/AppData/Local/Temp/RubiksCube.java",
+		"/C/development/eclipse/java-mars/eclipse/eclipse.ini",
+		"/C/development/web/eclipse-javascript-neon-M6-win32-x86_64/eclipse.ini",
+		"/C/development/web/eclipse-jee-mars/eclipse.ini",
+		"/C/development/web/OnlinePuzzle/README.md",
+		"/C/development/web/OnlinePuzzle/game.js",
+		"/C/Users/Dominik/temp.txt",
+		"/C/Users/Dominik/Desktop/expldes/models/mx0eb1s0w6ps-Guitar/Read Me.txt",
+		"/C/development/web/meteor-tutorial/imports/ui/body.html",
+		"/C/development/web/meteor-tutorial/imports/api/tasks.js",
+		"/C/development/web/meteor-tutorial/imports/ui/task.js",
+		"/C/development/web/meteor-tutorial/imports/ui/task.html",
+		"/C/development/web/meteor-tutorial/imports/ui/body.js",
+		"/C/development/web/meteor-tutorial/client/main.js",
+		"/C/development/web/meteor-tutorial/server/main.js",
+		"/C/development/web/meteor-tutorial/client/head.html",
+		"/C/development/web/meteor-tutorial/client/main.html",
+		"/C/development/web/meteor-tutorial/client/simple-todos.css",
+		"/C/Users/Dominik/AppData/Local/Temp/7zO1421.tmp/MANIFEST.MF",
+		"/C/Users/Dominik/AppData/Local/Temp/PortableDeviceToHostImpl32.java",
+		"/C/Users/Dominik/Dropbox/studium/aktuelle LVAs/Kunst & Computer/Infos.txt",
+		"/C/Users/Dominik/temp2.txt",
+		"/C/Users/Dominik/AppData/Local/Temp/7zO7F6A.tmp/MANIFEST.MF",
+		"/C/Users/Dominik/.m2/settings.xml",
+		"/E/SysConfig.dat",
+		"/C/Users/Dominik/Dropbox/studium/aktuelle LVAs/Exploratives Design/Projekt 2/Ideas.txt",
+		"/C/Users/Dominik/Google Drive/rpg gruppe/Verpflegung.txt",
+		"/C/development/eclipse/java-mars/workspace/MobilerRechnungsdruck/src/main/java/fxml/Login.css",
+		"/C/Users/Dominik/AppData/Local/Temp/7zO21F2.tmp/MANIFEST.MF",
+		"/C/Users/Dominik/AppData/Local/Temp/WhatsApp Chat_ Martin-2.txt",
+		"/C/Users/Dominik/AppData/Local/Temp/WhatsApp Chat_ Martin-1.txt",
+		"/C/Users/Dominik/AppData/Local/Temp/WhatsApp Chat_ Martin.txt",
+		"/C/Users/Dominik/Google Drive/Studium/aktuelle LVAs/Design Studies/codierung fr linkoder/Links_Count.txt",
+		"/C/development/eclipse/java-kepler/eclipse_kepler/eclipse.ini",
+		"/C/Users/Dominik/AppData/Local/Temp/scp50952/home/insyde/Dateien/Buchhaltung/Rechnungen/2011/RE_017_Zantho.docx",
+		"/C/Users/Dominik/AppData/Local/Temp/scp38404/test.php",
+		"/C/Users/Dominik/AppData/Local/Temp/scp40976/altenberg/configuration.php",
+		"/C/Users/Dominik/AppData/Local/Temp/scp44573/altenberg/htaccess.txt",
+		"/C/Users/Dominik/AppData/Local/Temp/scp39295/web.config.txt",
+		"/C/Users/Dominik/AppData/Local/Temp/scp36233/README.txt",
+		"/C/Users/Dominik/zeugs/links.txt",
+		"/C/Users/Dominik/.ssh/known_hosts",
+		"/C/Users/Dominik/AppData/Local/Temp/settings.xml",
+		"/C/Users/Dominik/Documents/Processing/modes/AndroidMode/examples/Topics/Advanced Data/HashMapClass/data/hamlet.txt",
+		"/C/Users/Dominik/Documents/Processing/modes/AndroidMode/examples/Topics/Advanced Data/HashMapClass/data/dracula.txt",
+		"/C/Users/Dominik/AppData/Local/Temp/scp18173/iab/images/607_winkler.jpg",
+		"/C/Users/Dominik/AppData/Local/Temp/WrapLayout.java",
+		"/C/Users/Dominik/temp2.sql",
+		"/C/Users/Dominik/AppData/Roaming/Sublime Text 2/Packages/User/Preferences.sublime-settings",
+		"/C/Users/Dominik/Desktop/RechnungsUst.sql",
+		"/C/Users/Dominik/Desktop/asdf/WhatsApp/Profile Pictures/.nomedia",
+		"/C/Users/Dominik/Desktop/asdf/Download/L_sungen.txt",
+		"/C/Users/Dominik/AppData/Local/Temp/scp31317/home/insyde/www/crow/mandant/rsfgl.dte",
+		"/C/Users/Dominik/AppData/Local/Temp/scp11606/home/insyde/www/crow/crow_demo.jnlp",
+		"/C/Users/Dominik/AppData/Local/Temp/scp12317/home/insyde/www/crow/crow_trunk.jnlp",
+		"/C/Users/Dominik/AppData/Local/Temp/scp15309/home/insyde/www/crow/crow_trunk.jnlp",
+		"/C/Users/Dominik/AppData/Local/Temp/scp15799/home/insyde/www/crow/crow_test.jnlp",
+		"/C/Users/Dominik/AppData/Local/Temp/scp12072/home/insyde/www/crow/index.php",
+		"/C/Users/Dominik/AppData/Local/Temp/scp51282/home/insyde/Dateien/Kunden/Weingut Heinrich GmbH/Doeldl verschluesselte Dateien/!readme.txt",
+		"/C/Users/Dominik/AppData/Roaming/Sublime Text 2/Packages/Default/Preferences.sublime-settings",
+		"/C/Users/Dominik/AppData/Roaming/Skype/dos_the_one/config.xml",
+		"/C/Users/Dominik/Desktop/autorun.inf",
+		"/E/autorun.inf",
+		"/C/Users/Dominik/Dropbox/studium/Scheckkartengröße.txt",
+		"/C/Users/Dominik/Dropbox/insyde/wip/20160120 Support Hillinger falscher Lieferant bei Ernte/corrections.sql",
+		"/C/Users/Dominik/Dropbox/insyde/wip/20160120 Support Hillinger falscher Lieferant bei Ernte/temp.sql",
+		"/C/Users/Dominik/AppData/Local/Temp/ClientWithResponseHandler.java",
+		"/C/Users/Dominik/Dropbox/insyde/wip/20160111 Sabine Flaschenauswertung/Verkaufte Flaschen ins Ausland (inkl. Hersteller) pro Jahr.sql",
+		"/C/Users/Dominik/temp.sql",
+		"/C/Users/Dominik/Desktop/myModem.mpas",
+		"/C/Program Files (x86)/Arduino/libraries/GSM/src/GSM.h",
+		"/C/Users/Dominik/Desktop/GSM3ShieldV1AccessProvider.cpp",
+		"/C/Program Files (x86)/Arduino/libraries/GSM/src/GSM3ShieldV1AccessProvider.h",
+		"/C/Users/Dominik/.android/adb_usb.ini",
+		"/C/Users/Dominik/Google Drive/Studium/aktuelle LVAs/BII/Final project/Notes.txt",
+		"/C/development/android/adt-bundle-windows-x86_64-20130917/sdk/extras/google/usb_driver/android_winusb.inf",
+		"/C/Users/Dominik/Dropbox/insyde/wip/20160111 Sabine Flaschenauswertung/Verkaufte Flaschen ins Ausland (inkl. Hersteller) pro Jahr - Kopie.sql",
+		"/C/Users/Dominik/Dropbox/studium/aktuelle LVAs/Gestaltung und Evaluation von Visualisierungen/Infos zu Bericht.txt",
+		"/C/Users/Dominik/Dropbox/insyde/wip/20160111 Sabine Flaschenauswertung/Unterschiede zu Sabines Auswertung.txt",
+		"/C/Users/Dominik/Google Drive/Studium/aktuelle LVAs/BII/Final project/Part A/meo/Dynamo_CAPTION.txt",
+		"/C/Users/Dominik/Google Drive/Studium/aktuelle LVAs/BII/Final project/Part A/meo/2016-01-08 11_12_04-Google Maps_CAPTION.txt",
+		"/C/Users/Dominik/Google Drive/Studium/aktuelle LVAs/BII/Final project/Part A/meo/IMG_08-01-16_12-32-04_CAPTION.txt",
+		"/C/Users/Dominik/Google Drive/Studium/aktuelle LVAs/BII/Final project/Part A/meo/TEXT_08-01-16_14-08-00.txt",
+		"/C/Users/Dominik/Google Drive/Studium/aktuelle LVAs/BII/Final project/Part A/meo/MobMETA.xml",
+		"/C/Users/Dominik/Google Drive/Studium/aktuelle LVAs/User Research Methods/PR/Paper/desktop.ini",
+		"/C/Users/Dominik/Google Drive/Studium/aktuelle LVAs/User Research Methods/PR/Paper/references.bibtex",
+		"/E/Standrechner Dominik/2012-12-24_11.17/ich/d.txt",
+		"/E/Asus A55VM Dominik/2013-11-16/Dominik/pass.txt",
+		"/C/Users/Dominik/Desktop/Re  Frage zum Kundenstatus.html",
+		"/C/Users/Dominik/Desktop/Martin OOP/Aufgabe9/HotCocktailRobot.java",
+		"/C/Users/Dominik/Desktop/Martin OOP/Aufgabe9/Cocktail.java",
+		"/C/Users/Dominik/Google Drive/Studium/aktuelle LVAs/User Research Methods/PR/Interview/Dominik 1 Notes.txt",
+		"/C/Users/Dominik/Google Drive/Studium/aktuelle LVAs/User Research Methods/PR/Interview/Transcript Dominik1.txt",
+		"/C/Users/Dominik/Google Drive/Studium/aktuelle LVAs/Beyond the Desktop/Exercise 2/face detections.txt",
+		"/C/Users/Dominik/Google Drive/Studium/aktuelle LVAs/Beyond the Desktop/Exercise 2/ubiscreen interaction.txt",
+		"/C/Users/Dominik/Google Drive/Studium/aktuelle LVAs/Beyond the Desktop/Exercise 2/app interaction.txt",
+		"/C/Users/Dominik/Google Drive/Studium/aktuelle LVAs/Beyond the Desktop/Exercise 2/print.php.txt",
+		"/C/Users/Dominik/Google Drive/Studium/aktuelle LVAs/BII/Project 4 - IoT/sketch_dec10a.ino",
+		"/E/TAG.TXT",
+		"/C/Users/Dominik/Google Drive/Studium/aktuelle LVAs/BII/Project 4 - IoT/info.txt",
+		"/C/Users/Dominik/Google Drive/Studium/aktuelle LVAs/BII/WildWildWest/WildWildWestSketch/WildWildWestSketch.pde",
+		"/C/Users/Dominik/Google Drive/Studium/aktuelle LVAs/BII/kinect_test/images/wild_west_ref.txt",
+		"/C/Users/Dominik/Google Drive/Studium/aktuelle LVAs/BII/kinect_test/kinect_test - Kopie.pde",
+		"/C/Users/Dominik/Google Drive/Studium/aktuelle LVAs/BII/kinect_test/kinect_test.pde",
+		"/C/Users/Dominik/Desktop/kineticspace 2.0.windows32/installation.txt",
+		"/C/Users/Dominik/AppData/Local/Temp/7zO1047.tmp/readme.txt",
+		"/C/Users/Dominik/AppData/Local/Temp/IKS-00000000512173371447940663086.csv",
+		"/C/development/java/workspace/wgm_trunk/src/test/resources/db-testdata.sql",
+		"/C/Users/Dominik/Google Drive/studium/aktuelle LVAs/Beyond the Desktop/Exercise 1b/MOTO6__time-planning/IMG_03-11-15_18-36-51_CAPTION.txt",
+		"/C/Users/Dominik/Google Drive/studium/aktuelle LVAs/Beyond the Desktop/Exercise 1b/MOTO6__time-planning/gantt_CAPTION.txt",
+		"/C/Users/Dominik/Desktop/export.htm",
+		"/C/Users/Dominik/Google Drive/studium/aktuelle LVAs/BII/Baloon/processing/sound.txt",
+		"/C/Users/Dominik/Google Drive/studium/aktuelle LVAs/BII/Baloon/processing/data/old_chiptune_attribution.txt",
+		"/C/Users/Dominik/Google Drive/studium/aktuelle LVAs/BII/Baloon/processing/data/large_fireball_attribution.txt",
+		"/C/Users/Dominik/AppData/Local/Temp/processing-1.pde",
+		"/C/development/java/eclipse_kepler/eclipse.ini",
+		"/C/Users/Dominik/Dropbox/studium/aktuelle LVAs/Beyond the Desktop &  Building Interaction Interfaces/arduino/images_tutorial/Ballon Description.txt",
+		"/C/Users/Dominik/Dropbox/studium/INSO Mailaccount.txt",
+		"/C/Users/Dominik/AppData/Local/Temp/ResourceMessagesTest.java",
+		"/C/Users/Dominik/Dropbox/studium/aktuelle LVAs/Beyond the Desktop &  Building Interaction Interfaces/Ideen für Projekte.txt",
+		"/C/Users/Dominik/Desktop/LINKODER_windows/lib/readme.txt",
+		"/C/Users/Dominik/AppData/Local/Temp/7zO625B.tmp/MANIFEST.MF",
+		"/C/Users/Dominik/AppData/Local/Temp/7zO2F8B.tmp/MANIFEST.MF",
+		"/C/Users/Dominik/Desktop/LINKODER_windows/lib/args.txt",
+		"/C/Users/Dominik/AppData/Local/Temp/7zO696F.tmp/MANIFEST.MF",
+		"/C/Users/Dominik/AppData/Local/Temp/7zODA2A.tmp/MANIFEST.MF",
+		"/C/Users/Dominik/AppData/Local/Temp/7zO8C7.tmp/LINKODER.class"
+	],
+	"find":
+	{
+		"height": 34.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"right",
+			"top",
+			"front",
+			"adr_",
+			"}",
+			"{",
+			")",
+			"(",
+			"\\n",
+			"$\\n",
+			"$",
+			"inner join kunden on gu_ku_id = ku_id",
+			"re_ku_id",
+			"from gutschrift",
+			"re_id =",
+			"re_rabatt",
+			"re_ust",
+			"gutschrifts",
+			"rechnung",
+			"bu_gut",
+			"_re_",
+			"re([^_\\n ]+)_",
+			"~/",
+			"font",
+			"AdvertPlaceholder",
+			"Modem_Init",
+			"<li class=\"bands\">\\n",
+			"</li>\\n",
+			"^;",
+			"([^;])\\n",
+			"(;\\d)\\n",
+			"\\n",
+			" +\\t",
+			"---",
+			"\\t",
+			" 	",
+			"\\n\\n",
+			"\\nLT",
+			"^LT",
+			"ls_id",
+			"re_",
+			"rechnung",
+			"\\R",
+			"(==+)([^=]+)==+",
+			"^72$",
+			"^72",
+			"\\s+",
+			"\\R",
+			"^$\\n",
+			"^([LMR]): ",
+			"^([LMR]):",
+			"^$\\n",
+			"abfuellcharge|abfuellen|abzufuellendeweine|adressen|artikelzusammelartikel|ausleeren|barriquelager|behaelter|behaelterbearbeiten|bestandsmeldungen|beurteilungen|biostufen|box|direktpressen|dokument|dokumentzuabfuellung|dokumentzulieferant|dokumentzuprodukt|einlagen|erntemeldungen|etikett|flasche|fuellanweisung|funktion|gebindekauf|gebindeverkauefe|herkuenfte|hinweis|kapseln|karton|kellerbewegungen|lagen|lager|lagerkorrektur|lagerstandkategorien|lagerstandprodukte|lagerstandsammelartikel|lagerstandsorten|lagerstandzusatzartikel|lieferant|lieferantmerkmal|lieferantzumerkmal|maische|maischeanteile|maischemessen|maischemischen|material|materialzuabcharge|messwert|mitglieder|pressen|presseverwaltung|produkte|produkteprolager|produktkategorie|qualitaetsstufen|rebeln|saftabzug|sammelartikel|sammelartikelauffuellungen|sammelartikelprolager|sorten|transportscheine|verlust|verlustmaische|verlustweinbox|verschluss|warnung|warnungzuuser|weinanteile|weinbox|weinkategorien|weinmessen|weinmischen|weinzumaische|wgm_arbeiten|wgm_arbeiten_has_geraet|wgm_arbeiten_has_mitarbeiter|wgm_arbeitsschritt|wgm_gebiet|wgm_geraet|wgm_grundstueck|wgm_grundstueck_sorte|wgm_katastralgemeinde|wgm_messtyp|wgm_messung|wgm_mitarbeiter|wgm_reihe|wgm_weingarten|zugebenmaische|zugebenwein|zusaetze|zusatzartikel|zusatzartikellieferungen|zusatzartikelprolager|zusatzartikelzusammelartikel",
+			" ",
+			"lagen",
+			"herkuenfte",
+			"SMainMenuMovieIntro",
+			" \\tpostgres \\t",
+			"^",
+			"firewall_wgh_local_Roadwarrior",
+			"path ",
+			" ",
+			",",
+			"bigint",
+			"timestamp",
+			"character varying",
+			"text",
+			"double precision",
+			"date",
+			"integer",
+			"boolean",
+			"^(\\w):",
+			"\\n\\n",
+			"\\n",
+			"path '",
+			"))",
+			"((",
+			"),(",
+			"(\\d),(\\d)",
+			"))",
+			"((",
+			"),(",
+			"(\\d),(\\d)",
+			"\\),\\(",
+			"POLYGON",
+			"\\), ?\\(",
+			"(\\d),(\\d)",
+			"SET NOT NULL",
+			"wether",
+			"respo",
+			" text ",
+			"restart",
+			"alter sequence",
+			"arbeiten",
+			" ?$",
+			"^(\\t*)",
+			"lastazu_",
+			"$",
+			"^(\\t*)",
+			"lastazu_",
+			"r_g_id",
+			"w_g_id",
+			"w_g_",
+			"INSERT INTO wgm_arbeiten_has_mitarbeiter VALUES ",
+			"INSERT INTO wgm_geraet VALUES ",
+			"INSERT INTO wgm_arbeitsschritt VALUES ",
+			";",
+			"INSERT INTO wgm_messung VALUES ",
+			";",
+			"INSERT INTO wgm_katastralgemeinde VALUES ",
+			"AHGE_DONE",
+			"gs_biodatum",
+			"\\((\\d+),",
+			"',",
+			"\\(\\d+",
+			"_gbnr text",
+			"([^NOT NULL]),",
+			"DEFAULT ''::character varying",
+			"character varying\\(\\d+\\)",
+			"id integer not null",
+			"jid0-GXjLLfbCoAx0LcltEdFrEkQdQPI@jetpack",
+			"/abzeichen/",
+			"0,",
+			"^[^:]+",
+			"Pre",
+			"test",
+			"/webdav/test/.*",
+			"$"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"rightSide",
+			"topSide",
+			"frontSide",
+			"\\}",
+			"\\{",
+			"\\)",
+			"\\(",
+			"\\\\n",
+			", ",
+			"left join rechnung on gu_re_id = re_id\\nleft join kunden on coalesce(gu_ku_id, re_ku_id) = ku_id",
+			"gu_ku_id",
+			"from gutschriften",
+			"gu_id = ",
+			"gu_rabatt",
+			"gu_ust",
+			"gutschrift",
+			"bu_gu",
+			"_gut_",
+			"gut\\1_",
+			"~/dumps/",
+			"",
+			"\\1;",
+			"\\1",
+			"",
+			";",
+			"",
+			"\\tLT",
+			"re_id",
+			"gu_",
+			"gutschriften",
+			" ",
+			"\\1=\\2\\1=",
+			" \\1=\\2\\1=",
+			" ",
+			"",
+			"\\1\\t",
+			"",
+			"|",
+			"",
+			"#",
+			"heinrich",
+			"",
+			",",
+			"),(",
+			"BIGINT",
+			"TIMESTAMP",
+			"CHARACTER VARYING",
+			"TEXT",
+			"DOUBLE PRECISION",
+			"DATE",
+			"INTEGER",
+			"BOOLEAN",
+			"\\1\\t",
+			" \\n",
+			" ",
+			"'LINESTRING ",
+			")",
+			"(",
+			",",
+			"\\1 \\2",
+			"",
+			",",
+			"\\1 \\2",
+			"),\\nnew Coordinate(",
+			"LINESTRING",
+			", ",
+			"\\1 \\2",
+			"TYPE TEXT",
+			" VARCHAR ",
+			"RESTART",
+			"ALTER SEQUENCE",
+			"arbeit",
+			" \"",
+			"\\1+ \"",
+			"lastapro_",
+			" \"",
+			"\\1+ \"",
+			"lastasa_",
+			"",
+			",",
+			"",
+			",",
+			"",
+			"(\\1;",
+			"';",
+			"(DEFAULT",
+			"_gbnr character varying(10)",
+			"\\1 NOT NULL,",
+			"NOT NULL",
+			"text",
+			"id IDENTITY PRIMARY KEY",
+			"/2_abzeichen/",
+			"0.",
+			"",
+			"Post",
+			" ",
+			"\\\\\\\\",
+			"\\\\%",
+			"\\%",
+			" //",
+			".",
+			"\\%",
+			" & ",
+			"\\t",
+			"  ",
+			"\\t",
+			"  ",
+			", ",
+			"\\t\\1",
+			"), \"",
+			"\\t+ \"",
+			"COALESCE",
+			"464313X20X131",
+			"464313X20X13",
+			"; \"",
+			"\\t+ \"",
+			"\"",
+			", \"",
+			"\\t+ \"",
+			"464313X20X",
+			"-4",
+			"- 4",
+			"464313X20X",
+			"464313X20",
+			"UPDATE lime_survey_464313 SET \\1 = 0 WHERE \\1 = -7;",
+			"464313X20X",
+			"\\t\\1 = \\1 - 7,",
+			""
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": false
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "TODO.txt",
+					"settings":
+					{
+						"buffer_size": 870,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								870,
+								870
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "index.html",
+					"settings":
+					{
+						"buffer_size": 2119,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2078,
+								2086
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 525.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "game.js",
+					"settings":
+					{
+						"buffer_size": 3349,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2324,
+								2324
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 840.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "arrowListeners.js",
+					"settings":
+					{
+						"buffer_size": 622,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								47,
+								34
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "drawCube.js",
+					"settings":
+					{
+						"buffer_size": 1520,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1519,
+								1519
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 210.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "style.css",
+					"settings":
+					{
+						"buffer_size": 722,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								118,
+								118
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CSS/CSS.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 0.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"replace":
+	{
+		"height": 62.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 150.0,
+	"status_bar_visible": true
+}
