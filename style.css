@@ -61,9 +61,14 @@ body {
   height: 210px;
 
 }
-#arrowUp:hover, #arrowDown:hover, #arrowLeft:hover, #arrowRight:hover, .img:hover {
-  border: 3px solid #FFD600;
+#arrowUp:hover, #arrowDown:hover, #arrowLeft:hover, #arrowRight:hover {
+  border: 3px solid #fff;
 }
+
+.img:hover {
+  opacity: 0.6;
+}
+
 .selected {
   border: 2px solid #267FFF;
 }

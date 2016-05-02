@@ -1,4 +1,4 @@
-var cubeColor = ["#F4CF64", "#E5A373", "#D7AFA5", "#4F4140","#FFF6D3", "#FF8366"];
+var cubeColor = ["#267FFF", "#FFD600", "#000000", "#FF7F00","#4d4d4d", "#eee"];
 // parameters @front, @right, @top are numbers which cube side it is  and according to this different color will be used for drawing a cube
 function drawCube(front, right, top) {
   // get the canvas element using the DOM
