@@ -5,6 +5,25 @@ $('document').ready(function() {
 	$("#arrowRight").click(arrowRight);
 });
 
+$(document).keydown(function(e) {
+	switch(e.which) {
+			case 37: arrowLeft(); // left
+			break;
+
+			case 38: arrowUp(); // up
+			break;
+
+			case 39: arrowRight(); // right
+			break;
+
+			case 40: arrowDown(); // down
+			break;
+
+			default: return; // exit this handler for other keys
+	}
+	e.preventDefault(); // prevent the default action (scroll / move caret)
+});
+
 const ArrowEnum = {
 	UP: 0,
 	RIGHT: 1,
