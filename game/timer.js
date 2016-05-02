@@ -1,4 +1,4 @@
-function startTimer(duration, display) {
+/*function startTimer(duration, display) {
     var timer = duration, minutes, seconds;
     setInterval(function () {
         minutes = parseInt(timer / 60, 10);
@@ -21,4 +21,4 @@ jQuery(function ($) {
     var threeMinutes = 60 * 3,
         display = $('#timeLbl');
     startTimer(threeMinutes, display);
-});
+});*/

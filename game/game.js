@@ -29,12 +29,6 @@ var Cube = function (picturesPerSide) {
 	this.objectCount = this.picturesPerSide * 3; // 6 sides divided by 2 pictures per object
 	this.objectsToSolve = this.objectCount;
 
-	this.score = 0;
-	if(localStorage.getItem("highscore") == null){
-		localStorage.setItem("highscore",-1);
-	}
-	console.log(localStorage.getItem("highscore"));
-
 	// create pictures and couples
 	var pictures = [];
 	for (i = 1; i < this.objectCount + 1; i++) {
@@ -65,48 +59,68 @@ var Cube = function (picturesPerSide) {
 	// select a picture and check if they can be solved
 	this.selectPicture = function (picture){
 
-		localStorage.setItem("highscore",this.score);
-		console.log(localStorage.getItem("highscore"));
-
 		if (this.selectedPicture == null){	 //selecting a picture
 			this.selectedPicture = picture;
-			console.log("user selected first card");
 			displayImages();
 		}
+
 		else if (picture == this.selectedPicture){ // selecting already selected picture = deselect
 			this.selectedPicture = null;
-			console.log("deselect");
 			displayImages();
 		}
+
 		else if (picture == this.selectedPicture.partner){
 			// correctly selected second picture
 			//Set pair as solved and Hide pictures
 			picture.changePictureToSolved();
 			this.selectedPicture.changePictureToSolved();
-			this.score = this.score + 2;
-			$("#scoreLbl").text(this.score);
+			score = score + 2;
+			$("#scoreLbl").text(score);
 
 			displayImages();
 			//Clear selection:
 			this.selectedPicture = null;
-			console.log("user selection correct");
 
 			displayImages();
 			// check if all pics have been solved
 			this.objectsToSolve--;
 			if (this.objectsToSolve == 0) {
 				window.alert("You solved the cube! Are you ready for the next level?"+
-												"\n Score: "+this.score);
+												"\n Score: "+score);
 				//Upgrade level
 				level++;
 				$("#levelLbl").text(level);
+
 				//Save score
-				if (this.score > parseInt(localStorage.getItem("highscore"))) {
-  				localStorage.setItem("highscore", this.score);
+				if (score > parseInt(localStorage.getItem("highscore"))) {
+  				localStorage.setItem("highscore", score);
 				}
 				$("#highscoreLbl").text(localStorage.getItem("highscore"));
-				this.score = 0;
-				$("#scoreLbl").text(this.score);
+
+				//TIMER HAS TO BE RESET
+				clearInterval(counting);
+				duration = 60 * 3;
+				timer = duration, minutes, seconds;
+				counting = setInterval(function () {
+				    minutes = parseInt(timer / 60, 10);
+				    seconds = parseInt(timer % 60, 10);
+
+				    minutes = minutes < 10 ? "0" + minutes : minutes;
+				    seconds = seconds < 10 ? "0" + seconds : seconds;
+
+				    $('#timeLbl').text(minutes + ":" + seconds);
+
+				    if (--timer < 0) {
+				        alert("Time's up, you lost. Start over?");
+				        timer = duration;
+
+				        level = 1;
+				        $("#levelLbl").text(level);
+
+								score = 0;
+				        init(1);
+				    }
+				}, 1000);
 
 				init(4);
 			};

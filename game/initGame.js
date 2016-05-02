@@ -1,7 +1,35 @@
 var cube;
 var level = 1;
+var score = 0;
+if(localStorage.getItem("highscore") == null){
+  localStorage.setItem("highscore",-1);
+}
+
+var duration = 60 * 3;
+var timer = duration, minutes, seconds;
+var counting = setInterval(function () {
+    minutes = parseInt(timer / 60, 10);
+    seconds = parseInt(timer % 60, 10);
+
+    minutes = minutes < 10 ? "0" + minutes : minutes;
+    seconds = seconds < 10 ? "0" + seconds : seconds;
+
+    $('#timeLbl').text(minutes + ":" + seconds);
+
+    if (--timer < 0) {
+        alert("Time's up, you lost. Start over?");
+        timer = duration;
+
+        level = 1;
+        score = 0;
+        $("#levelLbl").text(level);
+
+        init(1);
+    }
+}, 1000);
+
 $('document').ready(function() {
-  init(4);
+  init(1);
 });
 
 function init(picturesPerSide) {
@@ -48,5 +76,5 @@ function displayImages() {
     } else {
       $("#img"+i).removeClass('selected');
     }
-  }
+}
 }
