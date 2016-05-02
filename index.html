@@ -7,6 +7,7 @@
   <script src="jquery-2.2.3.min.js"></script>
 
   <script src="game.js"></script>
+  <script src="timer.js"></script>
   <script type="text/javascript">
     var cube;
     var level = 1;
@@ -20,21 +21,8 @@
       // create <img>s in canvas div
       var div = $("#myCanvas");
       div.empty();
-      div.append("<table>");
       for (i = 0; i < cube.picturesPerSide; i++) {
-
-        if(cube.picturesPerSide != 0 && i != 1
-            && cube.picturesPerSide % i){
-              div.append("<tr>");
-        }
-
         div.append("<img id='img" + i + "' class='img' src='' alt='" + i +"'>");
-
-        if(cube.picturesPerSide != 0 && i != 1
-            && cube.picturesPerSide % i){
-              div.append("</tr>");
-        }
-
       }
       div.append("</table>");
       displayImages();
@@ -88,6 +76,7 @@
 
   <p class="text">Level: <span id="levelLbl" >1</span></p>
   <p class="text">Score: <span id="highscoreLbl" >0</span></p>
+  <p class="text">Time: <span id="timeLbl" ></span></p>
 
 </body>
 </html>
