@@ -1,0 +1,74 @@
+body {
+  margin: 2em;
+  padding: 2em;
+}
+
+#cubeCanvas {
+  position: absolute;
+  padding: 0em;
+  margin: 0em;
+  left: 60em;
+  top: 1em;
+}
+
+#arrowUp {
+  position: absolute;
+  height: 4em;
+  left: 32em;
+  top: 0.5em;
+}
+
+#arrowLeft {
+  position: absolute;
+  width: 4em;
+  left: 15.5em;
+  top: 17em;
+}
+
+#arrowRight {
+  position: absolute;
+  width: 4em;
+  left: 51.5em;
+  top: 17em;
+}
+
+#arrowDown {
+  position: absolute;
+  height: 4em;
+  left: 32em;
+  top: 36.5em;
+}
+
+#myCanvas {
+  position: absolute;
+  left: 20em;
+  top: 5em;
+  border:5px solid #FFD600;
+  border-radius: 25px;
+  width: 490px;
+  height: 490px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.img {
+  flex: 1;
+  flex-basis: 230px;
+  border-radius: 15px;
+  margin: 5px;
+
+  width: 210px;
+  height: 210px;
+
+}
+#arrowUp:hover, #arrowDown:hover, #arrowLeft:hover, #arrowRight:hover {
+  border: 3px solid #fff;
+}
+
+.img:hover {
+  opacity: 0.6;
+}
+
+.selected {
+  border: 3px solid #267FFF;
+}

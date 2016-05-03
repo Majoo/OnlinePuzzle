@@ -1,12 +1,26 @@
-* define structure of UI with HTML/CSS
-* create a cube instance on startup
-* display images in divs
-* add event-listeners to buttons
- * if clicked switch currently displayed side of cube and display images
-* add event-listeners to divs, which display the images
- * call Cube.selectPicture (check for TODO in Cube.selectPicture)
-* dynamically create divs on startup
+* -define structure of UI with HTML/CSS-
+* -create a cube instance on startup-
+* -display images in divs-
+* -find images 1 to 6-
+* -add event-listeners to buttons-
+ * -if clicked switch currently displayed side of cube and display images-
+* -add event-listeners to divs, which display the images-
+ * -call Cube.selectPicture (check for TODO in Cube.selectPicture)-
+* -dynamically create <img>s on startup-
+* keyboard arrows
 
 * highscore
-* levels
-* cube-animation (when switching sides)
+ * -calculate highscore (basic: 1 point per solved picture;-
+                advanced: measure time needed, the faster the more points)
+ * -display highscore-
+* -levels-
+ * -switch level-
+ * -display current level-
+* -cube-animation (when switching sides)-
+* CSS effects:
+ * -draw border on arrow on mouseOver-
+ * -draw border on picture on mouseOver-
+ * -highlight selected picture-
+ * -scale/crop images so they fit in the cube in all levels-
+
+* Das Spiel soll von den Designer gerankt werden (6 Mind Skills: 0-10 Punkte pro Kategorie):
